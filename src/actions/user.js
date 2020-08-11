@@ -25,12 +25,11 @@ function login(email, password) {
 			    error => {
 			    		toastr.error('Error',error.error_message || "Email and password not valid")
 			        dispatch(failure(error.toString()));
-			        //dispatch(alertActions.error(error.toString()));
 			    }
 			);
     };
 
-    function request(user) { return { type: actionTypes.LOGIN_REQUEST } }
+    function request() { return { type: actionTypes.LOGIN_REQUEST } }
     function success(user) { return { type: actionTypes.LOGIN_SUCCESS, payload: {user} } }
     function failure(error) { return { type: actionTypes.LOGIN_FAILED } }
 }

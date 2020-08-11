@@ -10,8 +10,7 @@ export const userService = {
 
 function login(email, password) {
     const headers = {
-        headers: { 'Content-Type': 'application/json' },
-        //body: JSON.stringify({ email, password })
+        headers: { 'Content-Type': 'application/json' }
     };
     return axios.get(`${process.env.REACT_APP_API_URL}/users?email=${email}`, headers)
         .then(user => {
@@ -19,7 +18,7 @@ function login(email, password) {
         	var bytes  = CryptoJS.AES.decrypt(currentUser.password.toString(), process.env.REACT_APP_SECRET_KEY);
 			var plaintext = bytes.toString(CryptoJS.enc.Utf8);
 			if(plaintext === password){
-				// store user details and jwt token in local storage to keep user logged in between page refreshes
+				// store user details session storage to keep user logged in between page refreshes
             	sessionStorage.setItem('user', JSON.stringify(currentUser));
             	return currentUser;
 			}else{
@@ -31,7 +30,7 @@ function login(email, password) {
 }
 
 function logout() {
-    // remove user from local storage to log user out
+    // remove user from session storage to log user out
     sessionStorage.removeItem('user');
 }
 
@@ -40,7 +39,6 @@ function getAll(user_q) {
     return axios.get(`${process.env.REACT_APP_API_URL}/${pUrl}`)
         .then(users => {return users})
 }
-
 
 function getByEmail(email){
     return axios.get(`${process.env.REACT_APP_API_URL}/users?q=${email}`)

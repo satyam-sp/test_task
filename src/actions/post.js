@@ -18,8 +18,6 @@ function getAllPosts(post_q) {
 			    },
 			    error => {
 			        toastr.error('Error',error)
-			        
-			        //dispatch(alertActions.error(error.toString()));
 			    }
 			);
     };
@@ -39,7 +37,6 @@ function getMyPosts(userId) {
 			    error => {
 			        toastr.error('Error',error)
 			        
-			        //dispatch(alertActions.error(error.toString()));
 			    }
 			);
     };
