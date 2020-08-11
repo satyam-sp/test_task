@@ -13,6 +13,11 @@ In the project directory, you can run:
 ### 'For start both json server for fake data and reactJS'
 ### `npm run dev`
 
+
+### 'credentials'
+email: test@example.com
+password: 12345678
+
 ## NOTE :::
 
 if you are running `npm start` it will not run json server or might give some error 
