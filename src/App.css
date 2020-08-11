@@ -6,6 +6,121 @@
   height: 40vmin;
   pointer-events: none;
 }
+.mt-50{
+  margin-top: 50px;
+}
+
+.header{
+  background: #dcdbdb;
+  width: 100%;
+  border: 1px solid gray;
+  height: 100px;
+}
+.card-body {
+ padding: 13px;
+}
+.left-panel,.right-panel,.mid-panel{
+  padding: 15px;
+}
+.users-sections{
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow-y: scroll;
+  height: 732px;
+}
+.users-sections .card-text{
+  text-align: center;
+  font-weight: 600;
+}
+.right-panel .form-control {
+  width: 85%;
+  margin-top: 20px;
+  margin-left: 10px;
+  display: inline-block;
+}
+.left-panel-box{
+  background: #dcdbdb;
+  border: 1px solid gray;
+  width: 100%;
+  height: 395px;
+}
+.left-panel-box2{
+  background: #dcdbdb;
+  width: 100%;
+  border: 1px solid gray;
+  height: 390px;
+  margin-top: 15px;
+}
+.mid-panel-box{
+  background: #dcdbdb;
+  width: 100%;
+  border: 1px solid gray;
+  height: 800px;
+
+}
+.mid-panel .form-control {
+  width: 85%;
+  margin-top: 20px;
+  margin-left: 10px;
+  display: inline-block;
+}
+.right-panel-box{
+  border: 1px solid gray;
+  background: #dcdbdb;
+  width: 100%;
+  height: 800px;
+}
+.footer{
+  background: #dcdbdb;
+  width: 100%;
+  height: 26px;
+  border: 1px solid gray;
+}
+.left-panel .hd{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 19px;
+  font-weight: 600;
+}
+.posts{
+  height: 730px;
+  overflow-y: scroll;
+  padding: 20px;
+
+}
+.post{
+  display: block;
+  background: white;
+  padding: 25px;
+}
+.post span:first-child{
+  font-size: 20px;
+  font-weight: 600;
+} 
+.btn-logout{
+  float: right;
+  margin-right: 22px;
+  margin-top: 41px;
+
+}
+
+.left-panel-box2  a{
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.user-heading{
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 22px;
+  line-height: 6;
+}
+
+.left-panel img{
+  margin-top: 42px;
+  border: 2px solid;
+  margin-left: 125px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

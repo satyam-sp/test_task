@@ -1,0 +1,8 @@
+export const GET_REQUEST_SUCCESS = "GET_REQUEST_SUCCESS"
+export const LOGIN_REQUEST = "LOGIN_REQUEST"
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS"
+export const LOGIN_FAILED = "LOGIN_FAILED"
+export const LOGOUT = "LOGOUT"
+export const GET_ALL_POSTS = "GET_ALL_POSTS"
+export const GET_ALL_USERS = "GET_ALL_USERS"
+export const GET_USER = "GET_USER"

@@ -4,10 +4,28 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `use node version > 12`
+
+### Install packages
+### `npm install`
+
+
+### 'For start both json server for fake data and reactJS'
+### `npm run dev`
+
+## NOTE :::
+
+if you are running `npm start` it will not run json server or might give some error 
+so use run both server using `npm run dev`
+
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+
+Json server is running on.<br />
+Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
+
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
