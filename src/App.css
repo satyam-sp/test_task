@@ -31,6 +31,11 @@
 .users-sections .card-text{
   text-align: center;
   font-weight: 600;
+  margin: 0
+}
+.users-sections .card-status{
+  text-align: center;
+  margin: 0
 }
 .right-panel .form-control {
   width: 85%;

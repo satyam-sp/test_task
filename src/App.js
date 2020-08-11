@@ -4,7 +4,7 @@ import { history } from './helpers';
 import { LoginPage } from './components/LoginPage';
 import { MainPage } from './components/MainPage';
 import {PrivateRoute} from './components/auth/PrivateRoute';
-
+import ErrorBoundary from './components/error_handling/ErrorBoundary'
 import {AccountSetting} from './components/AccountSetting';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'react-redux-toastr/lib/css/react-redux-toastr.min.css'
@@ -13,6 +13,7 @@ function App() {
   global.RG ={currentUser: sessionStorage.user && JSON.parse(sessionStorage.user)}
   let username = global.RG.currentUser && `${  global.RG.currentUser.fullName.replace(' ', '_')}`
     return (
+      <ErrorBoundary>
       <div className="col-md-12">
         <Router history={history}>
           <Switch>
@@ -27,6 +28,7 @@ function App() {
           </Switch>
         </Router>
       </div>
+      </ErrorBoundary>
     );
 }
 

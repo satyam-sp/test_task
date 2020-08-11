@@ -118,11 +118,12 @@ function MainPage(props) {
                 <div className="row users-sections">
                   {users.map((item,index) =>{
                    return item.id !== user.id ? (
-                  <div class="col-sm-4 py-2">
-                    <div class="card h-60">
-                      <div class="card-body">
+                  <div className="col-sm-4 py-2">
+                    <div className="card h-60">
+                      <div className="card-body">
                           <img src={item.avatar} width="130" height="150" />
-                          <p class="card-text">{item.fullName}</p>
+                          <p className="card-text">{item.fullName}</p>
+                          <p className="card-status">{item.status}</p>
                       </div>
                     </div>
                   </div>) :  null
